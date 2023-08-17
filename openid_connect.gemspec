@@ -16,11 +16,11 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "attr_required", ">= 1.0.0"
   s.add_runtime_dependency "activemodel"
   s.add_runtime_dependency "validate_url"
-  s.add_runtime_dependency "validate_email"
   s.add_runtime_dependency "json-jwt", ">= 1.15.0"
   s.add_runtime_dependency "swd", "~> 1.3"
   s.add_runtime_dependency "webfinger", "~> 1.2"
   s.add_runtime_dependency "rack-oauth2", "~> 1.21"
+  s.add_runtime_dependency "mail"
   if Gem.ruby_version >= Gem::Version.create(3.1)
     # TODO:
     #  remove "net-smtp" dependency after mail gem 2.8+ (which supports ruby 3.1+) released.

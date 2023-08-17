@@ -51,7 +51,7 @@ describe OpenIDConnect::ResponseObject::UserInfo do
 
     context 'when email is invalid' do
       let :attributes do
-        {email: 'nov@localhost'}
+        {email: 'hiya'}
       end
       its(:valid?) { should == false }
       its(:errors) { should include :email }
